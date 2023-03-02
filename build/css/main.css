@@ -9,6 +9,54 @@
   align-items: center;
 }
 
+.header__location-link {
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1E1E1E;
+  display: inline-block;
+  padding-left: 26px;
+  text-decoration: none;
+}
+.header__location-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/gps.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__user-link {
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1E1E1E;
+  display: inline-block;
+  padding-left: 26px;
+  text-decoration: none;
+}
+.header__user-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/user.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .header_center-wrapper {
   display: flex;
   justify-content: space-between;

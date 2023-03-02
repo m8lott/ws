@@ -1,5 +1,6 @@
 .header {
 }
+
 .header__top {
   border-bottom: 1px solid #E5E5E5;
 padding: 12px 0 12px 0;
@@ -21,7 +22,8 @@ padding: 12px 0 12px 0;
 line-height: 16px;
 color: #1E1E1E;
 display: inline-block;
-padding-left: 17px;
+padding-left: 26px;
+text-decoration: none;
   &::before {
    content: '';
     display: block;
@@ -46,6 +48,29 @@ background-size: 100%;
 .header__topNav-link {
 }
 .header__user {
+}
+.header__user-link {
+  position: relative;
+ font-size: 13px;
+line-height: 17px;
+color: #1E1E1E;
+display: inline-block;
+padding-left: 26px;
+text-decoration: none;
+  &::before {
+   content: '';
+    display: block;
+position: absolute;
+top: 0px;
+left:0px;
+z-index: 1;
+width: 17px;
+height: 17px;
+background-image: url("../img/user.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+  }
 }
 .header__center {
 }
