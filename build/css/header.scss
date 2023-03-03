@@ -23,7 +23,7 @@ line-height: 16px;
 color: #1E1E1E;
 display: inline-block;
 padding-left: 26px;
-text-decoration: none;
+font-family: 'Montserrat';
   &::before {
    content: '';
     display: block;
@@ -38,19 +38,38 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 100%;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .header__topNav {
+
 }
 .header__topNav-menu {
+  display: flex;
+  align-items: center;
 }
 .header__topNav-item {
+  display: block;
+  padding-left: 10px;
+ // padding-right: 10px;
+  
 }
 .header__topNav-link {
+  font-size: 13px;
+line-height: 16px;
+color: #1E1E1E;
+font-family: 'Montserrat';
+&:hover {
+  text-decoration: underline;
+}
+
 }
 .header__user {
 }
 .header__user-link {
   position: relative;
+  font-family: 'Montserrat';
  font-size: 13px;
 line-height: 17px;
 color: #1E1E1E;
@@ -71,33 +90,75 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 100%;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .header__center {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .header_center-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
 }
 .header__logo {
 }
 .header__logo-img {
+  display: block;
+  width: 187px;
+  height: 64px;
+  background-image: url('../img/photo_2020-12-29_21-08-58\ 1.png');
+  background-position: left top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 .header__centerNav {
+
 }
 .header__centerNav-menu {
+  display: flex;
+  align-items: center;
 }
 .header__centerNav-item {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.active {
-}
+
 .header__centerNav-link {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 500px;
+  line-height: 18px;
+color: #000000;
+&:hover {
+  text-decoration: underline;
+}
+&.active {
+  color: #437FC8;
+}
 }
 .header__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+flex: 1 1 100%;
+max-width: 364px;
+box-sizing: border-box;
 }
 .header__search-input {
+  flex: 1 1 100%;
 }
 .header__search-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url ('../img/search.svg');
 }
 .header__social {
 }
