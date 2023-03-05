@@ -362,4 +362,14 @@
 }
 .header__bottomSale-link:hover {
   text-decoration: underline;
+}
+
+.index-slider__wrapper {
+  background: radial-gradient(33.06% 190.55% at 66.94% 44.11%, #7FB1ED 0%, #437FC8 34.66%, rgba(28, 80, 143, 0.95) 72.16%, #1C4E8A 87.8%, #1A467C 100%);
+  border-radius: 10px;
+}
+.index-slider__wrapper__wrapper-bg {
+  height: 460px;
+  width: 100%;
+  background-image: url("../img/lines.svg");
 }/*# sourceMappingURL=main.css.map */
