@@ -5,6 +5,7 @@ $(function() {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots:true
+    dots:true,
+    arrows:true,
   })
 });
