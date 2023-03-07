@@ -1,6 +1,6 @@
 
 $(function() {
-  $('.wrapper bg').slick({
+  $('.index-slider__wrapper-bg').slick({
     infinite: false,
     speed: 300,
     slidesToShow: 1,

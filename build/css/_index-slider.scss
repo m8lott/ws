@@ -1,13 +1,87 @@
 
+
 .index-slider__wrapper {
   background: radial-gradient(33.06% 190.55% at 66.94% 44.11%, #7FB1ED 0%, #437FC8 34.66%, rgba(28, 80, 143, 0.95) 72.16%, #1C4E8A 87.8%, #1A467C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 border-radius: 10px;
 }
 .index-slider__wrapper-bg {
-  height: 460px;
   width: 100%;
+  height: 460px;
   background-image: url('../img/lines.svg');
   background-position: center;
   background-repeat: no-repeat;
-  
+  padding-left: 114px;
+  padding-right: 114px;
+  position: relative;
   }
+  .index-slider__item-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 460px;
+    justify-content: space-between;
+    &item-picture {
+      width: 100%;
+      max-width:525px;
+      img {
+        display: block;
+        width: 100%;
+        height: auto ;
+      }
+    }
+  }
+  .index-slider__item-title {
+    font-family: 'Montserrat';
+  font-size: 45px;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  display: block;
+  }
+
+  .index-slider__item-text {
+    font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 55px;
+  color: #FFFFFF;
+  min-height: 93px;
+  padding-bottom: 15px;
+  }
+  .index-slider__item-link {
+    background: #FFFFFF;
+border-radius: 30px; 
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 16px;
+line-height: 35px;
+color: rgba(28, 80, 143, 0.95);
+padding: 18px 46px;
+  }
+.index-slider__item-content {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 500px;
+}
+.slick-arrow {
+  display: block;
+  position: absolute;
+  top:50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -500px;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url('img/arrow.png');
+}
+.slick-prev {
+left:13px;
+transform: translateY(-50%);
+}
+.slick-next {
+right:13px;
+transform: translateY(-50%) rotate(180deg);
+}
