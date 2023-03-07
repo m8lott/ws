@@ -1,5 +1,6 @@
 
 $(function() {
+
   $('.index-slider__wrapper-bg').slick({
     dots:true,
     arrows:true,
